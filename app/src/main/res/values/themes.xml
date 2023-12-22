@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FlyCompareApp" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Mes thèmes custom   -->
+    <style name="TitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/lgText</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="BlackTitleTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/lgText</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/mdText</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="PrimaryButtonTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/smText</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="CardTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/cardTitle</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="CardSubtitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/cardSubtitle</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="CardPriceTextStyle">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/cardTitle</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="CardCurrencyTextStyle">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/xsText</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="MetaInfoTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/xsText</item>
+        <item name="android:fontFamily">@font/nunito_extra_bold</item>
+    </style>
+
+    <style name="MetaInfoBtnTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/xsText</item>
+        <item name="android:fontFamily">@font/nunito_extra_bold</item>
+    </style>
+    <style name="MetaInfoBtnDarkTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/xsText</item>
+        <item name="android:fontFamily">@font/nunito_extra_bold</item>
+    </style>
+</resources>

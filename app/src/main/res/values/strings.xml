@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FlyCompareApp</string>
+
+    <!-- Splash Screen text -->
+    <string name="splash_title">Trouvez et réservez la meilleure expérience</string>
+    <string name="splash_subtitle">Voyager, découvrir le monde. Rien de mieux après une pandémie qui a créée autant de barrières entre nous.</string>
+    <string name="splash_button">Réserver votre ticket</string>
+
+    <!-- Home Screen Text -->
+    <string name="home_title">Réserver votre\nprochain vol 🛩️</string>
+    <string name="home_one_way">ALLER SIMPLE</string>
+    <string name="home_round_trip">ALLER RETOUR</string>
+    <string name="home_from_label">De</string>
+    <string name="home_from">Paris</string>
+    <string name="home_to_label">A</string>
+    <string name="home_to">Hong-Kong</string>
+    <string name="home_departure_date">13 Juil.</string>
+    <string name="home_arrival_date">15 Juil.</string>
+    <string name="home_nb_passengers">1</string>
+    <string name="home_class">Economique</string>
+    <string name="home_search_btn">CHERCHER</string>
+    <string name="home_good_deals">Bon plans du moment</string>
+    <string name="home_good_deal_1_town">Yaoundé</string>
+    <string name="home_good_deal_1_country">Cameroun</string>
+    <string name="home_good_deal_1_price">50</string>
+    <string name="home_good_deal_2_town">Douala</string>
+    <string name="home_good_deal_2_country">Cameroun</string>
+    <string name="home_good_deal_2_price">60</string>
+
+    <!-- Bottom Navigation Bar -->
+    <string name="navbar_flights">Vols</string>
+    <string name="navbar_history">Historique</string>
+    <string name="navbar_profile">Profil</string>
+</resources>
