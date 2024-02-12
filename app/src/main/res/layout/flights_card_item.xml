@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/md"
+    android:layout_marginBottom="@dimen/md">
+
+    <LinearLayout
+        android:id="@+id/card_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/md"
+        android:layout_marginBottom="@dimen/md"
+        android:background="@drawable/btn_white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/card_airline_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smText"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text="@string/flight_card_airline_company"
+            android:textAppearance="@style/TextCityGreyStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/md"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- Departure field -->
+            <LinearLayout
+                android:id="@+id/card_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_departure_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flight_card_departure_airport"
+                    android:textAppearance="@style/TextCityYellowStyle" />
+
+                <TextView
+                    android:id="@+id/card_departure_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flight_card_departure_city"
+                    android:textAppearance="@style/TextCityGreyStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/card_departure_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/sm"
+                    android:text="@string/flight_card_departure_time"
+                    android:textAppearance="@style/MetaInfoBtnDarkTextStyle" />
+
+                <!-- Colonne centrale avec l'heure -->
+                <RelativeLayout
+                    android:id="@+id/card_center"
+                    android:layout_width="@dimen/lg"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/airplane_dashed_curved"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="1sp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dashed_curved" />
+
+                    <ImageView
+                        android:id="@+id/airplaneImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sm"
+                        android:layout_centerInParent="true"
+                        android:cropToPadding="true"
+                        android:gravity="center"
+                        android:src="@drawable/blue_light_airplane" />
+
+                    <TextView
+                        android:id="@+id/card_flight_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/airplaneImageView"
+                        android:gravity="center"
+                        android:text="@string/flight_card_duration"
+                        android:textAppearance="@style/MetaInfo2BtnDarkTextStyle"
+                        android:textSize="@dimen/xsText" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/card_arrival_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/sm"
+                    android:text="@string/flight_card_arrival_time"
+                    android:textAppearance="@style/MetaInfoBtnDarkTextStyle" />
+            </LinearLayout>
+
+
+            <!-- Colonne de droite -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/card_center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_arrival_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/flight_card_arrival_airport"
+                    android:textAppearance="@style/TextCityYellowStyle"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/card_arrival_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_arrival_airport"
+                    android:gravity="left"
+                    android:text="@string/flight_card_arrival_city"
+                    android:textAppearance="@style/TextCityGreyStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/card_escale_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smText"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextCityGreyStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/smText"
+                android:gravity="center"
+                android:text="500"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/light_blue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/smText"
+                android:gravity="center"
+                android:text=" €"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/light_blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

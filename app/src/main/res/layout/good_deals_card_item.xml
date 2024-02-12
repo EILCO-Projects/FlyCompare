@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Image of the good deals + his overlay -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/cardWidth"
+    android:layout_marginLeft="@dimen/md"
+    android:layout_height="@dimen/cardHeight"
+    app:cardCornerRadius="@dimen/borderRadius"
+    >
+    <RelativeLayout
+        android:id="@+id/card_item"
+        android:layout_width="@dimen/cardWidth"
+        android:layout_height="@dimen/cardHeight">
+
+
+        <ImageView
+            android:id="@+id/home_card_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yaounde"/>
+        <View
+            android:id="@+id/home_card_background_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_card_overlay" />
+
+        <!-- Meta info about the deal -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/md"
+            android:layout_marginBottom="@dimen/xs"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_town"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="@string/home_good_deal_1_town"
+                android:textAppearance="@style/CardTitleTextStyle" />
+
+            <TextView
+                android:id="@+id/card_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_good_deal_1_country"
+                android:textAppearance="@style/CardSubtitleTextStyle" />
+        </LinearLayout>
+        <!-- Price of the deals into his box in the right bottom of the card -->
+        <RelativeLayout
+            android:id="@+id/card_price_background"
+            android:layout_width="56dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_card_price">
+
+
+            <ImageView
+                android:id="@+id/card_price_content_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fav_icon"
+                app:tint="@color/black"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

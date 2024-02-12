@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Custom Colors -->
+    <color name="light_grey_ED">#EDEDED</color>
+    <color name="light_grey_F4">#F4F4F4</color>
+    <color name="light_blue">#3FA3FF</color>
+    <color name="blue">#001AFF</color>
+    <color name="green_flashy">#0FBA00</color>
+    <color name="green">#032C00</color>
+    <color name="yellow">#FFA800</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

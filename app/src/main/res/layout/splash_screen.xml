@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashscreen"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/xlg"
+        android:src="@drawable/map_with_plane_background"
+        android:gravity="top"/>
+    <ImageView
+        android:id="@+id/travelers"
+        android:layout_width="296sp"
+        android:layout_height="391sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/travelers" />
+    <LinearLayout
+        android:id="@+id/splashscreen_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/md"
+        android:orientation="vertical"
+        android:clipToOutline="true">
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+        <TextView
+            android:id="@+id/splash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/lg"
+            android:text="@string/splash_title"
+            android:textAppearance="@style/TitleTextStyle" />
+
+        <TextView
+            android:id="@+id/splash_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/md"
+            android:textAppearance="@style/DefaultTextStyle"
+            android:text="@string/splash_subtitle" />
+
+        <TextView
+            android:id="@+id/splash_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/md"
+            android:layout_marginTop="@dimen/lg"
+            android:background="@drawable/yellow_btn"
+            android:textAppearance="@style/PrimaryButtonTextStyle"
+            android:text="@string/splash_button"/>
+    </LinearLayout>
+
+</RelativeLayout>

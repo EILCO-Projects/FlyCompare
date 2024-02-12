@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Fly Compare</string>
+    <!-- Splash Screen text -->
+    <string name="splash_title">Trouvez et réservez la meilleure expérience</string>
+    <string name="splash_subtitle">Voyager, découvrir le monde. Rien de mieux après une pandémie qui a créée autant de barrières entre nous.</string>
+    <string name="splash_button">Réserver votre ticket</string>
+
+    <!-- Home Screen Text -->
+    <string name="home_title">Réserver votre\nprochain vol 🛩️</string>
+    <string name="home_one_way">ALLER SIMPLE</string>
+    <string name="home_round_trip">ALLER RETOUR</string>
+    <string name="home_from_label">De</string>
+    <string name="home_from"></string>
+    <string name="home_to_label">A</string>
+    <string name="home_to"></string>
+    <string name="home_departure_date">13 Juil.</string>
+    <string name="home_arrival_date">15 Juil.</string>
+    <string name="home_nb_passengers">1</string>
+    <string name="home_class">Economique</string>
+    <string name="home_search_btn">CHERCHER</string>
+    <string name="home_good_deals">A visiter autour de vous</string>
+    <string name="home_good_deal_1_town">Yaoundé</string>
+    <string name="home_good_deal_1_country">Cameroun</string>
+    <string name="home_good_deal_1_price">50</string>
+    <string name="home_good_deal_2_town">Douala</string>
+    <string name="home_good_deal_2_country">Cameroun</string>
+    <string name="home_good_deal_2_price">60</string>
+
+    <!--Flights Screen Activity Text -->
+    <string name="flights_screen_title">Vols</string>
+    <string name="flights_screen_subtitle">Fly Compare</string>
+
+    <!--Flights Card item Text -->
+    <string name="flight_card_airline_company">American Airlines</string>
+    <string name="flight_card_departure_airport">CDG</string>
+    <string name="flight_card_departure_city">Pacific/Auckland</string>
+    <string name="flight_card_departure_time">21:45</string>
+    <string name="flight_card_duration">3h45m</string>
+    <string name="flight_card_arrival_airport">HKG</string>
+    <string name="flight_card_arrival_time">01:40</string>
+    <string name="flight_card_arrival_city">Pacific/Auckland</string>
+
+    <!-- Select Flight Classe -->
+    <string name="flight_class_business">Classe Business</string>
+    <string name="flight_class_eco">Classe économique</string>
+    <string name="flight_class_h_eco">Classe Haute économique</string>
+    <string name="flight_class_premium">Première classe</string>
+
+    <!-- Bottom Navigation Bar -->
+    <string name="title_home">Vols</string>
+    <string name="title_dashboard">Historique</string>
+    <string name="title_notifications">Profil</string>
+</resources>

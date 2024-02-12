@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="360dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:paddingBottom="@dimen/lg"
+            android:src="@drawable/map_with_plane_background" />
+        <!-- Page Title -->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/splash_flights_sreen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flights_screen_title"
+            android:paddingTop="@dimen/lg"
+            android:layout_marginHorizontal="@dimen/md"
+            android:textAppearance="@style/TitleTextStyle"/>
+        <!-- Page Subtitle -->
+        <TextView
+            android:id="@+id/splash_flights_sreen_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flights_screen_subtitle"
+            android:layout_marginHorizontal="@dimen/md"
+            android:textAppearance="@style/DefaultTextStyle"/>
+
+        <RelativeLayout
+            android:id="@+id/card_flight_sreen_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/md">
+
+            <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/list_of_flights"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:id="@+id/flights_spinner"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Trop de requete vers l'api. Prendre une version payante"
+                    android:id="@+id/flights_text_state"
+                    android:textAppearance="@style/MetaInfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Custom Dimensions -->
+    <dimen name="xxlg">200sp</dimen>
+    <dimen name="xlg">100sp</dimen>
+    <dimen name="lg">50sp</dimen>
+    <dimen name="md">15sp</dimen>
+    <dimen name="xs">5sp</dimen>
+
+    <dimen name="lgText">30sp</dimen>
+    <dimen name="cardTitle">20sp</dimen>
+    <dimen name="cardSubtitle">15sp</dimen>
+    <dimen name="mdText">18sp</dimen>
+    <dimen name="smText">16sp</dimen>
+    <dimen name="xsText">10sp</dimen>
+    <dimen name="sm">12sp</dimen>
+
+    <dimen name="cardWidth">247sp</dimen>
+    <dimen name="cardHeight">164sp</dimen>
+
+    <dimen name="borderRadius">8sp</dimen>
+    <dimen name="borderRadiusFlights">18sp</dimen>
+</resources>

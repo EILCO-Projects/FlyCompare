@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Airport Codes Overlay -->
+    <ImageView
+        android:id="@+id/home_background_map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/green"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_with_plane_background" />
+
+    <TextView
+        android:id="@+id/airport_codes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="CDG              HKG"
+
+        android:textAppearance="@style/TitleTextStyle" />
+    <!-- Flight Details Card Below Map -->
+    <LinearLayout
+        android:id="@+id/flight_details_card"
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-55dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/btn_white"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/flight_segment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Airplane Image centered on top -->
+
+            <!-- Flight Number below the image to the left -->
+            <ImageView
+                android:id="@+id/airplane_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/airplane_image" />
+
+            <TextView
+                android:id="@+id/flight_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/airplane_image"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="Vol A90PDC"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/black" />
+
+            <!-- Flight Route below the image to the right -->
+            <TextView
+                android:id="@+id/flight_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/airplane_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:text="CDG - HKG"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/green" />
+
+            <!-- Departure and Arrival Time below the flight number and flight route -->
+            <TextView
+                android:id="@+id/departure_arrival_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flight_number"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="10:50 - 00:10"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mdText" />
+
+            <!-- Price below the flight route, aligned to the right -->
+            <TextView
+                android:id="@+id/flight_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flight_route"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:text="€450"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/yellow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <!-- Airline Logo -->
+            <ImageView
+                android:id="@+id/airline_logo"
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/airfrance_logo" />
+
+            <!-- Gray Separator Line to the right of the Airline Logo -->
+            <TextView
+                android:id="@+id/airline_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/airline_logo"
+                android:layout_alignStart="@+id/airline_logo"
+                android:layout_alignEnd="@+id/airline_logo"
+                android:layout_alignBottom="@id/airline_logo"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="-28dp"
+                android:gravity="center"
+                android:text="AIRFRANCE"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textSize="@dimen/md" />
+
+            <View
+                android:id="@+id/separator_line"
+                android:layout_width="1dp"
+                android:layout_height="85dp"
+                android:layout_alignTop="@id/airline_logo"
+                android:layout_alignBottom="@id/airline_logo"
+                android:layout_marginHorizontal="30dp"
+                android:layout_toEndOf="@id/airline_logo"
+                android:background="@color/light_grey_F4" />
+
+            <!-- Label "Départ" to the right of the Separator Line -->
+            <TextView
+                android:id="@+id/label_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/airline_logo"
+                android:layout_toEndOf="@id/separator_line"
+                android:alpha=".6"
+                android:text="Départ"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textSize="@dimen/md" />
+
+            <!-- Departure Time directly below "Départ" label -->
+            <TextView
+                android:id="@+id/departure_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_depart"
+                android:layout_alignStart="@id/label_depart"
+                android:text="10:50"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/blue" />
+
+            <!-- Label "Arrivée" to the right of the "Départ" label, aligned with "Départ" -->
+            <TextView
+                android:id="@+id/label_arrivee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/label_depart"
+                android:layout_marginStart="75dp"
+                android:layout_toEndOf="@id/label_depart"
+                android:alpha=".6"
+                android:text="Arrivée"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textSize="@dimen/md" />
+
+            <!-- Arrival Time directly below "Arrivée" label -->
+            <TextView
+                android:id="@+id/arrival_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_arrivee"
+                android:layout_alignStart="@id/label_arrivee"
+                android:text="00:10"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/black" />
+            <!-- Label "Durée de vol" below "Départ" time, aligned with "Départ" time -->
+            <TextView
+                android:id="@+id/label_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/departure_time"
+                android:layout_alignStart="@id/departure_time"
+                android:layout_marginTop="16dp"
+                android:alpha=".6"
+                android:text="Durée de vol"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textSize="@dimen/md" /> <!-- Added top margin for spacing -->
+
+            <!-- Flight Duration below "Durée de vol" label -->
+            <TextView
+                android:id="@+id/flight_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_duration"
+                android:layout_alignStart="@id/label_duration"
+                android:text="13h20m"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/green_flashy" />
+
+            <!-- Label "Prix" aligned with "Arrivée" label, below "Arrivée" time -->
+            <TextView
+                android:id="@+id/label_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrival_time"
+                android:layout_alignStart="@id/arrival_time"
+                android:layout_marginTop="16dp"
+                android:alpha=".6"
+                android:text="Prix"
+                android:textAppearance="@style/MetaInfoTextStyle"
+                android:textSize="@dimen/md" /> <!-- Added top margin for spacing -->
+
+            <!-- Price below "Prix" label -->
+            <TextView
+                android:id="@+id/flight_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_price"
+                android:layout_alignStart="@id/label_price"
+                android:text="€450"
+                android:textAppearance="@style/CardTitleTextStyle"
+                android:textColor="@color/yellow" />
+        </RelativeLayout>
+
+        <!-- Payment Methods Container -->
+        <LinearLayout
+            android:id="@+id/payment_methods"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/flight_price"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/md">
+
+            <!-- Icons for each payment method -->
+            <!-- Replace with actual drawable resources -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/mastercard_logo" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/paypal_logo" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/visa_logo" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goto_site_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/md"
+            android:layout_marginTop="@dimen/md"
+            android:background="@drawable/btn_primary"
+            android:text="ALLER SUR LE SITE"
+            android:textAppearance="@style/MetaInfoBtnTextStyle" />
+    </LinearLayout>
+</RelativeLayout>
